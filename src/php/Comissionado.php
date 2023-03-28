@@ -10,5 +10,9 @@
             $this -> totalVenda = $totalVenda;
             $this -> taxaComissao = $taxaComissao;
         }
+
+        function vencimento(){
+            return ($this -> totalVenda * ($this -> taxaComissao / 100));
+        }
     }
 ?>

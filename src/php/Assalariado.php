@@ -9,5 +9,9 @@
             parent:: __construct($nome, $sobrenome, $cpf);
             $this -> salario = $salario;
         }
+
+        function vencimento(){
+            return($this -> salario);
+        }
     }
 ?>

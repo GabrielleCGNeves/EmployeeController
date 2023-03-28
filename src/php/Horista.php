@@ -10,5 +10,9 @@
             $this -> precoHora = $precoHora;
             $this -> horasTrabalhadas = $horasTrabalhadas;
         }
+
+        function vencimento(){
+            return($this -> precoHora * $this -> horasTrabalhadas);
+        }
     }
 ?>
