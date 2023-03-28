@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Controller</title>
+</head>
+<body>
+    <form action="" method="POST">
+        <label for="nome">Nome: </label>
+        <input type="text" name="nome" maxlength="20">
+
+        <label for="sobrenome">Sobrenome: </label>
+        <input type="text" name="sobrenome" maxlength="40">
+
+        <label for="cpf">CPF: </label>
+        <input type="text" name="cpf" maxlength="11">
+
+        <div id="campoAssalariado">
+            <label for="salario">Salário: </label>
+            <input type="number" name="salario" min="1.320">
+        </div>
+
+        <div id="campoComissionado">
+            <label for="totalVenda">Valor Total da Venda:</label>
+            <input type="number" name="totalVenda" min="1">
+            
+            <label for="taxaComissao">Taxa da Comissão(%)</label>
+            <input type="number" name="taxaComissao" min="1" max="100">
+        </div>
+
+        <div id="campoHorista">
+            <label for="precoHora">Preço por Hora:</label>
+            <input type="number" name="precoHora" min="1">
+
+            <label for="horasTrabalhadas">Horas Trabalhadas</label>
+            <input type="number" name="horasTrabalhadas" min="1">
+        </div>
+
+        <input type="submit" value="CONSULTAR">
+
+    </form>
+</body>
+</html>
