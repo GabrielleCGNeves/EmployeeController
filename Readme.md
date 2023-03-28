@@ -1,5 +1,5 @@
 <div align=center>
-    <h1>(🧑‍💼) Employee Controller</h1>
+    <h1>🧑‍💼 Employee Controller</h1>
 </div>
 
 
