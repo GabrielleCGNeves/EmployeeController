@@ -17,11 +17,16 @@
 
 ## Índice
 - [src](./src/)
+  - [db](./src/db)
+    - [db_empresa](./src/db/db_empresa.sql)
   - [html](./src/html)
     - [Formulário](./src/html/index.html)
   - [js](./src/js)
     - [main](./src/js/main.js)
   - [php](./src/php)
+    - [action](./src/php/action)
+      - [cadastrarColab](./src/php/action/cadastrarColab.php)
+      - [conexaoDB](./src/php/action/conexaoDB.php)
     - [Assalariado](./src/php/Assalariado.php)
     - [Comissionado](./src/php/Comissionado.php)
     - [Empregado](./src/php/Empregado.php)
