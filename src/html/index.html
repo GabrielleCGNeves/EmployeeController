@@ -11,7 +11,9 @@
 </head>
 <body>
     <main class="container">
-        <form action="../php/action/cadastrarColab.php" method="POST">
+        <form id="formID" action="../php/action/cadastrarColab.php" method="POST">
+
+            <h2>Cadastro de Colaboradores</h2>
     
             <label for="funcao">Função Exercida</label>
             <select name="funcao" id="funcao" onchange="mostrarCampos()">
@@ -51,7 +53,7 @@
                 <input type="number" name="horasTrabalhadas" min="1">
             </div>
     
-            <input type="submit" value="CADASTRAR" name="btnCadastrar">
+            <input type="submit" value="CADASTRAR" name="btnCadastrar" id="butao">
     
         </form>
     </main>
