@@ -6,50 +6,55 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Employee Controller</title>
     <script src="../js/main.js" defer></script>
+    <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@1.*/css/pico.min.css">
+
 </head>
 <body>
-    <form action="" method="POST">
+    <main class="container">
+        <form action="../php/action/cadastrarColab.php" method="POST">
+    
+            <label for="funcao">Função Exercida</label>
+            <select name="funcao" id="funcao" onchange="mostrarCampos()">
+                <option value="">Selecione</option>
+                <option value="assalariado">Assalariado</option>
+                <option value="comissionado">Comissionado</option>
+                <option value="horista">Horista</option>
+            </select>
+    
+            <label for="nome">Nome: </label>
+            <input type="text" name="nome" maxlength="20">
+    
+            <label for="sobrenome">Sobrenome: </label>
+            <input type="text" name="sobrenome" maxlength="40">
+    
+            <label for="cpf">CPF: </label>
+            <input type="text" name="cpf" maxlength="11">
+    
+            <div id="campoAssalariado" style="display: none;">
+                <label for="salario">Salário: </label>
+                <input type="number" name="salario">
+            </div>
+    
+            <div id="campoComissionado" style="display: none;">
+                <label for="totalVenda">Valor Total da Venda:</label>
+                <input type="number" name="totalVenda" min="1">
+                
+                <label for="taxaComissao">Taxa da Comissão(%)</label>
+                <input type="number" name="taxaComissao" min="1" max="100">
+            </div>
+    
+            <div id="campoHorista" style="display: none;">
+                <label for="precoHora">Preço por Hora:</label>
+                <input type="number" name="precoHora" min="1">
+    
+                <label for="horasTrabalhadas">Horas Trabalhadas</label>
+                <input type="number" name="horasTrabalhadas" min="1">
+            </div>
+    
+            <input type="submit" value="CADASTRAR" name="btnCadastrar">
+    
+        </form>
+    </main>
 
-        <label for="funcao">Função Exercida</label>
-        <select name="funcao" id="funcao" onchange="mostrarCampos()">
-            <option value="">Selecione</option>
-            <option value="assalariado">Assalariado</option>
-            <option value="comissionado">Comissionado</option>
-            <option value="horista">Horista</option>
-        </select>
-
-        <label for="nome">Nome: </label>
-        <input type="text" name="nome" maxlength="20">
-
-        <label for="sobrenome">Sobrenome: </label>
-        <input type="text" name="sobrenome" maxlength="40">
-
-        <label for="cpf">CPF: </label>
-        <input type="text" name="cpf" maxlength="11">
-
-        <div id="campoAssalariado">
-            <label for="salario">Salário: </label>
-            <input type="number" name="salario" min="1.320">
-        </div>
-
-        <div id="campoComissionado">
-            <label for="totalVenda">Valor Total da Venda:</label>
-            <input type="number" name="totalVenda" min="1">
-            
-            <label for="taxaComissao">Taxa da Comissão(%)</label>
-            <input type="number" name="taxaComissao" min="1" max="100">
-        </div>
-
-        <div id="campoHorista">
-            <label for="precoHora">Preço por Hora:</label>
-            <input type="number" name="precoHora" min="1">
-
-            <label for="horasTrabalhadas">Horas Trabalhadas</label>
-            <input type="number" name="horasTrabalhadas" min="1">
-        </div>
-
-        <input type="submit" value="CONSULTAR">
-
-    </form>
 </body>
 </html>
