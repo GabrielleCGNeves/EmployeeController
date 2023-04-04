@@ -1,5 +1,4 @@
 <?php  
-
     require_once 'Empregado.php';
 
     class Assalariado extends Empregado{

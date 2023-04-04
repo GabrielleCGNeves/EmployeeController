@@ -1,5 +1,5 @@
 <?php
-    require 'Empregado.php';
+    require_once 'Empregado.php';
 
     class Comissionado extends Empregado{
         var $totalVenda;
