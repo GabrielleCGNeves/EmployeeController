@@ -4,15 +4,17 @@
 
 
 <div align='center'>
-<strong>
-<p><a href='https://github.com/GabrielleCGNeves'>Gabrielle Carvalho Gonçalves das Neves</a></p>
-</strong>
+  <strong>
+    <p><a href='https://github.com/GabrielleCGNeves'>Gabrielle Carvalho Gonçalves das Neves</a></p>
+  </strong>
 </div>
 
 ---
 > Create the objects below according to your analysis, using inheritance, constructors, and polymorphism. Create an interface for user input in the system.
 
-![image](https://files.catbox.moe/8lm955.png)
+<div align='center'>
+  ![image](https://files.catbox.moe/8lm955.png)
+</div>
 ---
 
 ## Índice
