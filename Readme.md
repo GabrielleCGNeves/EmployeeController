@@ -12,9 +12,10 @@
 ---
 > Create the objects below according to your analysis, using inheritance, constructors, and polymorphism. Create an interface for user input in the system.
 
-<div align='center'>
-  ![image](https://files.catbox.moe/8lm955.png)
+<div align=center>
+    <img src="https://files.catbox.moe/8lm955.png" width=500>
 </div>
+
 ---
 
 ## Índice
